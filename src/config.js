@@ -75,7 +75,7 @@ const apiOrgId = core.getInput("apiOrgId", requiredInputOptions);
 
 const apiBaseUrl = `${
   new URL(apiUrl).origin
-}/Contrast/api/sast/v1/organizations/${apiOrgId}`;
+}/Contrast/api/sast/organizations/${apiOrgId}`;
 const apiAuthHeader = Buffer.from(`${apiUserName}:${apiServiceKey}`).toString(
   "base64",
 );
